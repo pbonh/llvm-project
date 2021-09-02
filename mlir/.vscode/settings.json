@@ -5,15 +5,15 @@
         "Ninja",
         "Unix Makefiles"
     ],
-    "cmake.configureArgs": [
-        "${workspaceFolder}/../llvm"
-    ],
     "cmake.sourceDirectory": "${workspaceFolder}/../llvm",
     "cmake.configureSettings": {
         "LLVM_ENABLE_PROJECTS": "mlir",
+        "LLVM_BUILD_EXAMPLES": "ON",
         "LLVM_TARGETS_TO_BUILD": "X86;NVPTX;AMDGPU",
         "LLVM_ENABLE_ASSERTIONS": "ON",
-        "LLVM_ENABLE_LLD=ON": "ON"
+        "LLVM_ENABLE_DOXYGEN": "ON",
+        "LLVM_CCACHE_BUILD": "ON",
+        "LLVM_ENABLE_LLD": "ON"
     },
     "cmake.buildDirectory": "${workspaceFolder}/../build${buildType}",
     "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",

@@ -9,6 +9,9 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     clangd-12 \
     lld \
     ninja-build \
+    valgrind \
+    ccache \
+    doxygen \
     cmake
 
 RUN update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100

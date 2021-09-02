@@ -1,0 +1,9 @@
+[
+    {
+        "name": "LLVM Toolchain Kit(GCC)",
+        "compilers": {
+            "C": "/usr/bin/gcc",
+            "CXX": "/usr/bin/g++"
+        }
+    }
+]

@@ -4,7 +4,7 @@
         {
             "label": "Check-MLIR",
             "type": "shell",
-            "command": "cmake -g main.cpp -o main.out",
+            "command": "cmake",
             "args": [
                 "--build",
                 ".",
